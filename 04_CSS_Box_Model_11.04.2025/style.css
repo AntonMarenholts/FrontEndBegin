@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+* /*говорит о том,что настраиваются все элементы*/ {
+    margin: 0;/*нулевые значения делаются для того,чтоб отключить все дефолтные отступы,например, и потом применять всё своё*/
+    padding: 0;
+
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: "Covered By Your Grace", cursive;
+  font-weight: 400;/*толщина шрифта от 100 до 900 (кратное 100)*/
+  font-style: normal;
+}
+
+header{
+    background-image: url("./img/Image20250411113106.jpg");/*фоновая картинка*/
+    height: 400px;/*задаётся высота картинки*/
+    background-position: center;/*позиция фона*/
+    background-size: cover;/*выравнивание картинки по одной оси, размер фона*/
+    /* background-repeat: no-repeat; повторение фона */
+
+}

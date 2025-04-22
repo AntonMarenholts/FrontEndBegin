@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="">news</a>
+        </li>
+        <li>
+          <a href="">feed</a>
+        </li>
+        <li>
+          <a href="">profile</a>
+        </li>
+      </ul>
+    </nav>
+
+
+
+    <h1 style="text-align: center">Mebel Club</h1>
+
+    <p style="text-align: center">
+      «<a href="https://meblevy.club/ru/"><em>Мебельный Клуб</em></a> / МК
+      Production» - это 10 лет успешной работы, более 1000 успешно сданных
+      проектов (коттеджи, офисы, магазины, кафе-рестораны, гостиницы, ТРЦ). Мы
+      работаем как для частного клиента, так и для B2B бизнеса. Мы знаем, как
+      важны нашим заказчикам качество и сроки! Собственное производство 1500м2,
+      современный и технологичный парк станков. Опытная и слаженная команда. Мы
+      используем самые качественные материалы и комплектующие. Все это позволяет
+      нам работать над проектами любой сложности от обычного стола до сложных
+      конструкторских проектов! Мы обеспечим Вас всеми необходимыми мебелью,
+      торговым оборудованием и нестандартными изделиями!
+    </p>
+
+    <div style="text-align: center" class="img">
+      <img src="./детская фото 2-в.jpg" alt="childrens" width="400" />
+
+      <img src="./кабинет фото новый.png" alt="cabinet" width="400" />
+
+      <img src="./кухня модерн.jpg" alt="kitchen" width="400" />
+
+      <img src="./спальня фото 1.png" alt="bedroom" width="400" />
+    </div>
+
+    <ul>
+      <li>Classic</li>
+      <li>Modern</li>
+    </ul>
+    <ol>
+      <li>Europa</li>
+      <li>Asia</li>
+      <li><del>America</del></li>
+    </ol>
+
+    <form action="/register">
+      <div>
+        <label for="name">Name: </label>
+        <input
+          id="name"
+          type="text"
+          placeholder="enter your name..."
+          required
+        />
+      </div>
+
+      <div>
+        <label for="email">Email: </label>
+        <input
+          id="email"
+          type="email"
+          placeholder="enter your email..."
+          required
+        />
+      </div>
+      <div>
+        <label for="password">Password: </label>
+        <input
+          id="password"
+          type="password"
+          placeholder="enter your password..."
+          title="Требования к паролю: цифры, заглавная буква, маленькая буква и спец. символ (мин. 8 символов)"
+          pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="phone">Phone: </label>
+        <input
+          id="phone"
+          type="phone"
+          placeholder="enter your phone number..."
+          title="Example: +123-456-7890"
+          pattern="\+?[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="mebel type">Mebel type</label>
+        <select id="mebel type" required>
+          <option value="">Choose type...</option>
+          <option value="kitchen">Kitchen</option>
+          <option value="bedroom">Bedroom</option>
+          <option value="office">Office</option>
+          <option value="childrens">childrens</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="agreement">Agreement</label>
+        <input name="agreement" type="checkbox" required />
+      </div>
+
+      <div>
+        <label for="user">User</label>
+        <input name="gender" id="male" type="radio" required />
+
+        <label for="admin">Admin</label>
+        <input name="gender" id="Female" type="radio" required />
+      </div>
+
+      <div class="btn">
+        <button type="reset">reset</button>
+        <button type="submit">register</button>
+      </div>
+    </form>
+
+    <table border="1px">
+      <thead>
+        <tr>
+          <th>Имя</th>
+          <th>Возраст</th>
+          <th>Профессия</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Анна</td>
+          <td>35</td>
+          <td>FrontEnd</td>
+        </tr>
+
+        <tr>
+          <td>Боря</td>
+          <td>25</td>
+          <td>backEnd</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </body>
+</html>

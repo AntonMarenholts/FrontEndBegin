@@ -1,0 +1,145 @@
+
+body {
+  background-color: #f4f4f4; /*цвет фона*/
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* шрифт*/
+  margin: 0; /*внешние отступы*/
+  padding: 2rem; /*внутренние отступы (rem / em 
+  rem=16px , em= размеру шрифта ближайшего родителя у которого изменено значение размера шрифта)*/
+  line-height: 1.6; /*межстрочный интервал (расстояние между базовыми линиями строк текста)*/
+}
+
+h1 {
+  color: #2c3e5c;
+  text-align: center; /*выравнивание текста*/
+  margin-bottom: 1rem; /*отступ сверху(margin-top), отступ снизу (margin-bottom)*/
+}
+a {
+  color: #2980b9;
+  text-decoration: none; /*текстовая декорация*/
+}
+a:hover {
+  text-decoration: underline; /*декорация подчёркивание под линией (есть варианты)*/
+}
+
+p {
+  max-width: 800px; /*ограничивает максимальную ширину*/
+  margin: 0 auto 2rem; /*внешние отступы*/
+  background-color: #fff; /*цвет фона*/
+  padding: 1rem 1.5rem; /*вн. отступы*/
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  text-align: justify; /*justify - выравнивание текста слева-справа*/
+  text-indent: 30px; /*абзацный отступ*/
+}
+
+form {
+  border: 1px solid #ccc; /*рамка , solid-стиль(сплошная линия(есть варианты)), цвет*/
+  border-radius: 5px;
+  padding: 25px;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div {
+  margin: 15px 0;
+}
+
+img {
+  cursor: pointer; /*появление курсора на картинке*/
+  display: block; /*блочное расположение*/
+  margin: 1rem auto; /*отступы для картинки*/
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*тень*/
+  transition: transform 0.3s ease; /*скорость увеличения/уменьшения элемента*/
+}
+
+.img:nth-child(2){
+  position: relative;
+  left: 350px;
+}
+
+img:hover {
+  transform: scale(
+    1.02
+  ); /*позволяет увеличить или уменьшить элемент (в данный момент 2%)*/
+}
+
+ul{
+  list-style: none; /*это убрать точку впереди */
+}
+
+ul,
+ol {
+  max-width: 600px;
+  margin: 1rem auto;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10 px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#name,
+#email,
+#password,
+#phone {
+  width: 100%;
+  padding: 5px 0 5px 5px;
+  border: #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  width: fit-content;
+  margin: 20px auto 30px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+button[type="reset"] {
+  background: #13e176;
+}
+
+button[type="reset"]:hover {
+  background: #01562a;
+}
+
+button[type="submit"] {
+  background: #13e176;
+}
+button[type="submit"]:hover {
+  background: #01562a;
+}
+
+table {
+  width: 80%;
+  margin: 2rem auto;
+  border-collapse: collapse; /*где линии дублируются,не дублируй их*/
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden; /*убирает края рамки (есть варианты)*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  text-align: left;/*текст прижат к левому краю (есть варианты)*/
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #3498db;
+  color: white; /*цвет для заголовка*/
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
