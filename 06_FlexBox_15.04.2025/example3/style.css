@@ -1,0 +1,158 @@
+.container {
+  display: flex; /* чтобы включить flexBox*/
+  gap: 24px;/* зазор между box*/ /*24px -по высоте, 50px - по ширине*/
+
+  height: 1600px;
+  background-color: lightcyan;
+
+  /*выравнивание всех элементов по поперечной оси
+
+  justify-по основной
+  align-по поперечной
+
+  */
+  align-items: flex-end;/*выравнивание всех элементов по поперечной оси*/
+
+  /*переместит весь контент в нижнюю часть контейнера */
+  align-content: flex-end; /* выравнивание всех линий по основной оси*/
+
+  
+  flex-wrap: wrap;/*чтоб box остался своего размера и перескакивал если нужно*/
+}
+
+.five{
+    align-self: flex-start;
+    /*flex-start указывает, что данный флекс-элемент должен быть выровнен по началу поперечной оси контейнера.*/
+}
+
+.card {
+  display: flex; /* чтобы включить flexBox*/
+  flex-direction: column; /*row - строка, column - столбец*/
+  justify-content: space-between; /* выравнивание элементов по основной оси*/
+  /* 
+    flex-end - в конце 
+    flex-start - в начале
+    space-around - распределилось по ширине равномерно
+    space-between - распределилось между элементами всё пустое
+    centre - по центру
+     */
+  align-items: center; /*выравнивание всех элементов по поперечной оси*/
+  
+}
+
+.item {
+  background-color: lightpink;
+  height: 400px;
+  width: 350px;
+}
+
+.small {
+  height: 200px;
+}
+
+.toll {
+  height: 420px;
+}
+
+.container-2{
+    padding: 32px;
+    display: flex;
+    gap: 32px;
+    flex-direction: row-reverse;/*определяет направление главной оси (main axis) и порядок расположения флекс-элементов вдоль этой оси.*/
+}
+
+.special-kid{
+    /*flex grow - можно расширить дочерний элемент*/
+    flex: 1;
+}
+
+
+/* 
+header {  фиксированный header 
+position: fixed;  фиксированное позиционирование 
+top: 0;  отступ сверху 
+left: 0;  отступ слева 
+height: 70px;  высота хедера 
+width: 100%;  ширина хедера 
+background-color: #333;  цвет фона 
+color: white;  цвет текста 
+text-align: center;  выравнивание текста по центру 
+padding: 20px 0;  внутренний отступ 
+z-index: 1000;  чтобы был поверх всех элементов 
+} 
+
+*/
+
+/* x:hover {
+  color: red; цвет выделяемого элемента
+  text-decoration: underline; декорация подчёркивание под линией (есть варианты)
+} */
+
+
+/* img {
+  cursor: pointer; появление курсора на картинке
+  display: block; блочное расположение
+  margin: 1rem auto; отступы для картинки
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); тень
+  transition: transform 0.3s ease; скорость увеличения/уменьшения элемента
+}
+
+.img:nth-child(2){
+  position: relative;
+  left: 350px;
+}
+
+img:hover {
+  transform: scale(
+    1.02
+  ); позволяет увеличить или уменьшить элемент (в данный момент 2%)
+}
+
+ul{
+  list-style: none; это убрать точку впереди 
+} */
+
+
+/*
+<div>
+        <label for="user">User</label>
+        <input name="gender" id="male" type="radio" required />
+
+        <label for="admin">Admin</label>
+        <input name="gender" id="Female" type="radio" required />
+      </div>
+
+      <div class="btn">
+        <button type="reset">reset</button>
+        <button type="submit">register</button>
+      </div>
+    </form>
+*/
+
+
+/*
+<!-- 
+ctr + c - копировать
+ctr + v - вставить
+ctr + s - сохранить
+ctr + x - вырезать (копировать и удалить)
+ctr + a - выделить всё
+ctr + z - действие назад
+ctr + shift + z - действие вперёд
+-->
+*/
+
+
+/*
+<!-- div - блочный элемент(по умолчанию) -->
+      <!-- span - строчный элемент (по умолчанию) -->
+      <!-- br - прервать строчку -->
+      <!-- hr - линия -->
+
+*/
+
+/*
+font-size: 2rem; размер шрифта
+*/
+

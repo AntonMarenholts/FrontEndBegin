@@ -1,0 +1,37 @@
+.card {
+    background-color: lightcoral;
+    padding: 14px;
+    
+    border-radius: 18px;
+    height: 400px;
+    width: 300px;
+}
+
+.container{
+    /* чтобы включить flexBox*/
+    display: flex;
+
+    /* 
+    flex-end - в конце 
+    flex-start - в начале
+    space-around - распределилось по ширине равномерно
+    space-between - распределилось между элементами всё пустое
+    centre - по центру
+
+    */
+    justify-content: center; /* выравнивание элементов по основной оси*/
+    gap: 20px; /* зазор между box*/
+}
+
+.container-2{
+    display: flex;
+    flex-direction: column; /*row - строка, column - столбец*/
+    gap: 20px;
+    
+}
+
+.container-3{
+    display: flex;
+    flex-wrap: wrap;/*чтоб box остался своего размера и перескакивал если нужно*/
+    gap: 20px 50px; /*24px -по высоте, 50px - по ширине*/
+}
