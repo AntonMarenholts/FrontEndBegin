@@ -1,0 +1,74 @@
+
+body {
+    background-color: #f4f4f4; /*цвет фона*/
+    color: #333;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* шрифт*/
+    margin: 0; /*внешние отступы*/
+    padding: 2rem; /*внутренние отступы (rem / em 
+    rem=16px , em= размеру шрифта ближайшего родителя у которого изменено значение размера шрифта)*/
+    line-height: 1.6; /*межстрочный интервал (расстояние между базовыми линиями строк текста)*/
+  }
+
+  h1 {
+    color: #2c3e5c;
+    text-align: center; /*выравнивание текста*/
+    margin-bottom: 1rem; /*отступ сверху(margin-top), отступ снизу (margin-bottom)*/
+  }
+
+  a {
+    color: #2980b9;
+    text-decoration: none; /*текстовая декорация*/
+  }
+  a:hover {
+    text-decoration: underline; /*декорация подчёркивание под линией (есть варианты)*/
+  }
+
+  p {
+    max-width: 800px; /*ограничивает максимальную ширину*/
+    margin: 0 auto 2rem; /*внешние отступы*/
+    background-color: #fff; /*цвет фона*/
+    padding: 1rem 1.5rem; /*вн. отступы*/
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: justify; /*justify - выравнивание текста слева-справа*/
+    text-indent: 30px; /*абзацный отступ*/
+  }
+  
+  form {
+    border: 1px solid #ccc; /*рамка , solid-стиль(сплошная линия(есть варианты)), цвет*/
+    border-radius: 5px;
+    padding: 25px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  div {
+    margin: 15px 0;
+  }
+  
+  img {
+    cursor: pointer; /*появление курсора на картинке*/
+    display: block; /*блочное расположение*/
+    margin: 1rem auto; /*отступы для картинки*/
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*тень*/
+    transition: transform 0.3s ease; /*скорость увеличения/уменьшения элемента*/
+  }
+  
+  .img:nth-child(2){
+    position: relative;
+    left: 350px;
+  }
+  
+  img:hover {
+    transform: scale(
+      1.02
+    ); /*позволяет увеличить или уменьшить элемент (в данный момент 2%)*/
+  }
+  
+  ul{
+    list-style: none; /*это убрать точку впереди */
+  }

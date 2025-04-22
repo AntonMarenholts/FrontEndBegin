@@ -1,0 +1,250 @@
+
+<link rel="stylesheet" href="./style.css" />
+<!--  подключить css -->
+<script src="./../js/index.js" defer></script>
+<!--  подключить js -->
+
+<link rel="stylesheet" href="./style Elvira.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+<!--подключение шрифта-->
+
+<script src="./../js/index.js" defer></script><!--  подключить js -->
+
+
+                             <!--ЗАГОЛОВОК-->
+<h1>Mebel Club</h1>
+
+<!-- 
+ctr + c - копировать
+ctr + v - вставить
+ctr + s - сохранить
+ctr + x - вырезать (копировать и удалить)
+ctr + a - выделить всё
+ctr + z - действие назад
+ctr + shift + z - действие вперёд
+-->
+
+
+<!-- 
+./ - остаться в той же папке
+../ - выйти во внешнюю директорию (папку)
+-->
+
+
+<!-- Работа со списками
+ul - unordered list - ненумерованный (маркированный) список
+ol - order list - нумерованный список
+li - list item - элемент списка
+-->
+<ul>
+  <li>Asia</li>
+</ul>
+<ol>
+  <li>Asian Elephant</li>
+</ol>
+
+
+                                        <!--КАРТИНКА-->
+<strong>Elephantidae</strong>
+<!--жирный текст-->
+текст какой-то
+<a href="https://en.wikipedia.org/wiki/Elephas">
+  <!--ссылочное-->
+  <em>Elephas</em>
+  <!--слово,при нажатии на которое будет открываться ссылка--->
+</a>
+
+<a href="https://en.wikipedia.org/wiki/Elephas">
+  <!--ссылка на фото-->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Elephant_Sumatra_ProfilG.jpg"
+    alt="elephants"
+/></a>
+
+
+                                 <!--ТАБЛИЦА-->
+<table border="1">
+  <thead>
+    <tr>
+      <th>Имя</th>
+      <th>Возраст</th>
+      <th>Профессия</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Анна</td>
+      <td>35</td>
+      <td>FrontEnd</td>
+    </tr>
+
+    <tr>
+      <td>Боря</td>
+      <td>25</td>
+      <td>backEnd</td>
+    </tr>
+  </tbody>
+</table>
+
+
+                               <!--ДЛЯ РЕГИСТРАЦИИ ИЛИ ПОЛЯ ВВОДА-->
+<form action="/register">
+    <div> <!--(универсальный контейнер для группировки других HTML-элементов.  
+        Аббревиатура div расшифровывается как "division" (разделение))-->
+      <label for="name">Name: </label>
+      <input
+        id="name"
+        type="text"
+        placeholder="enter your name..." (чтоб полупрозрачно было написано что вводить)
+        required (используется для указания того, что поле формы должно быть заполнено пользователем перед отправкой формы)
+      />
+    </div>
+
+    <br /> <!--разрыв строки-->
+
+    <div> 
+      <label for="email">Email: </label>
+      <input
+        id="email"
+        type="email"
+        placeholder="enter your email..."
+        required
+      />
+
+      <label for="password">Password: </label>
+      <input
+        id="password"
+        type="password"
+        placeholder="enter your password..."
+        title="Требования к паролю: цифры, заглавная буква, маленькая буква и спец. символ (мин. 8 символов)"
+        pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}"
+        required
+      />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="phone">Phone: </label>
+      <input
+        id="phone"
+        type="phone"
+        placeholder="enter your phone number..."
+        title="Example: +123-456-7890"
+        pattern="\+?[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+        required
+      />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="mebel type">Mebel type</label>                 (название кнопки)
+      <select id="mebel type" required>                          (выбор того что внутри)
+        <option value="">Choose type...</option>                 (первое обычно пустое)
+        <option value="kitchen">Kitchen</option>                 (то,что будет внутри)
+        <option value="bedroom">Bedroom</option>
+        <option value="office">Office</option>
+        <option value="childrens">childrens</option>
+      </select>
+    </div>
+
+    <br />
+
+    <div>
+      <label for="agreement">Agreement</label>
+      <input name="agreement" type="checkbox" required /> (тип checkbox после кнопки квадрат)
+    </div>
+
+    <br />
+
+    <div>
+      <label for="male">Male</label>
+      <input name="gender" id="male" type="radio" required /> (тип radio после кнопки круг)
+
+    </div>
+
+    <br />
+
+    <div>
+       
+      <button type="reset">reset</button>
+       <!--<button>: Это тег, который создает интерактивную кнопку на веб-странице.
+        type="reset":  Атрибут type указывает, что это кнопка "сброса".-->
+      <button type="submit">register</button>
+      <!--type="submit": Атрибут type указывает, что это кнопка "отправки".-->
+
+    </div>
+  </form>
+
+
+                             <!--БЛОКИ-->
+   <header></header> <!--ЗАГОЛОВОК-->
+
+   <main></main> <!--ОСНОВА-->
+   <main>
+    <!--левое меню-->
+    <aside>
+      <!--<aside> - это семантический HTML-элемент, предназначенный для представления контента, 
+        который косвенно связан с основным содержанием страницы или раздела. Это означает, 
+        что информация внутри <aside> должна быть релевантной, но не являться основной частью контента.-->
+
+      <!-- Работа со списками
+        ul - unordered list - ненумерованный (маркированный) список
+        ol - order list - нумерованный список
+        li - list item - элемент списка
+         -->
+      <ul class="left">
+        <li>Hotel Gelert</li>
+        <li>Hotel Redison</li>
+        <li>Park inn</li>
+        <li>Hilton</li>
+        <li>Four Seasons</li>
+      </ul>
+    </aside>
+
+    <!--центральное меню-->
+    <section class="centre">
+      <h2>Lorem ipsum dolor</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+        illum, dolorum voluptatum odio quo iure rem blanditiis ea minus ipsum,
+        voluptas eaque voluptatem ipsam. Natus aut velit recusandae a facere.
+      </p>
+    </section>
+
+    <!--правое меню-->
+    <aside>
+      <ul class="rigth">
+        <li>Yacht sport</li>
+        <li>Ski</li>
+        <li>Surfing</li>
+        <li>Safari</li>
+        <li>Hard drinking</li>
+      </ul>
+    </aside>
+  </main>
+
+   <footer></footer> <!--НИЗ-->
+
+
+
+   <!--<span>1</span> представляет собой строчный элемент, который отобразит на веб-странице цифру "1"-->
+   <div class="item card"><span>1</span><span>Press</span></div>
+
+
+   <nav class="navigation"></nav> <!--<nav>: Этот HTML-тег определяет раздел страницы, предназначенный для навигации.
+    Он используется для группировки ссылок на другие страницы сайта или на различные разделы текущей страницы.
+    <nav> помогает как пользователям, так и поисковым системам ориентироваться на сайте-->
+
+
+
+
+
+
