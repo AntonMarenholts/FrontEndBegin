@@ -1,74 +1,367 @@
+* /*говорит о том,что настраиваются все элементы*/ {
+  margin: 0;/*нулевые значения делаются для того,чтоб отключить все дефолтные отступы,например, и потом применять всё своё*/
+  padding: 0;
+
+}
 
 body {
-    background-color: #f4f4f4; /*цвет фона*/
-    color: #333;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* шрифт*/
-    margin: 0; /*внешние отступы*/
-    padding: 2rem; /*внутренние отступы (rem / em 
+  background-color: #f4f4f4; /*цвет фона*/
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* шрифт*/
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 400; /*толщина шрифта от 100 до 900 (кратное 100)*/
+  font-style: normal;
+  margin: 0; /*внешние отступы*/
+  margin: 20px auto 30px; /* начиная сверху,по горизонтали, снизу */
+  padding: 2rem; /*внутренние отступы (rem / em 
     rem=16px , em= размеру шрифта ближайшего родителя у которого изменено значение размера шрифта)*/
-    line-height: 1.6; /*межстрочный интервал (расстояние между базовыми линиями строк текста)*/
+  padding: 5px 0 5px 5px; /* сверху и по часовой стрелке */
+  line-height: 1.6; /*межстрочный интервал (расстояние между базовыми линиями строк текста)*/
+}
+
+header {
+  background-image: url("./img/Image20250411113106.jpg"); /*фоновая картинка*/
+  height: 400px; /*задаётся высота картинки*/
+  background-position: center; /*позиция фона*/
+  background-size: cover; /*выравнивание картинки по одной оси, размер фона*/
+  /* background-repeat: no-repeat; повторение фона */
+}
+
+header {
+  /* фиксированный header */
+  position: fixed; /* фиксированное позиционирование */
+  top: 0; /* отступ сверху */
+  left: 0; /* отступ слева */
+  height: 70px; /* высота хедера */
+  width: 100%; /* ширина хедера */
+  /*background-color: #333;  цвет фона */
+  /*color: white;  цвет текста */
+  text-align: center; /* выравнивание текста по центру */
+  padding: 20px 0; /* внутренний отступ */
+  z-index: 1000; /* чтобы был поверх всех элементов */
+}
+
+h1 {
+  color: #2c3e5c;
+  text-align: center; /*выравнивание текста*/
+  margin-bottom: 1rem; /*отступ сверху(margin-top), отступ снизу (margin-bottom)*/
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none; /*текстовая декорация*/
+}
+a:hover {
+  text-decoration: underline; /*декорация подчёркивание под линией (есть варианты)*/
+}
+
+p {
+  max-width: 800px; /*ограничивает максимальную ширину*/
+  margin: 0 auto 2rem; /*внешние отступы*/
+  background-color: #fff; /*цвет фона*/
+  padding: 1rem 1.5rem; /*вн. отступы*/
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /*тень короба*/
+  text-align: justify; /*justify - выравнивание текста слева-справа*/
+  text-indent: 30px; /*абзацный отступ*/
+}
+
+form {
+  border: 1px solid #ccc; /*рамка , solid-стиль(сплошная линия(есть варианты)), цвет*/
+  border-radius: 5px;
+  padding: 25px;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div {
+  margin: 15px 0;
+}
+
+img {
+  cursor: pointer; /*появление курсора на картинке*/
+  display: block; /*блочное расположение*/
+  margin: 1rem auto; /*отступы для картинки*/
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*тень*/
+  transition: transform 0.3s ease; /*скорость увеличения/уменьшения элемента*/
+}
+
+.img:nth-child(2) {
+  position: relative;
+  left: 350px;
+}
+
+img:hover {
+  transform: scale(
+    1.02
+  ); /*позволяет увеличить или уменьшить элемент (в данный момент 2%)*/
+}
+
+ul {
+  list-style: none; /*это убрать точку впереди */
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  text-align: left; /*текст прижат к левому краю (есть варианты)*/
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #3498db;
+  color: white; /*цвет для заголовка*/
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+button[type="reset"]:hover {
+  background: #750c04;
+}
+
+                                          /* FlexBox */
+
+.container{
+  /* чтобы включить flexBox*/
+  display: flex;
+
+  /* 
+  flex-end - в конце 
+  flex-start - в начале
+  space-around - распределилось по ширине равномерно
+  space-between - распределилось между элементами всё пустое
+  centre - по центру
+
+  */
+  justify-content: center; /* выравнивание элементов по основной оси*/
+  gap: 20px; /* зазор между box*/
+}
+
+.container-2{
+  display: flex;
+  flex-direction: column; /*row - строка, column - столбец*/
+  gap: 20px;
+  
+}
+
+.container-3{
+  display: flex;
+  flex-wrap: wrap;/*чтоб box остался своего размера и перескакивал если нужно*/
+  gap: 20px 50px; /*24px -по высоте, 50px - по ширине*/
+}
+
+.container {
+  display: flex; /* чтобы включить flexBox*/
+  gap: 24px;/* зазор между box*/ /*24px -по высоте, 50px - по ширине*/
+
+  height: 1600px;
+  background-color: lightcyan;
+
+  /*выравнивание всех элементов по поперечной оси
+
+  justify-по основной
+  align-по поперечной
+
+  */
+  align-items: flex-end;/*выравнивание всех элементов по поперечной оси*/
+
+  /*переместит весь контент в нижнюю часть контейнера */
+  align-content: flex-end; /* выравнивание всех линий по основной оси*/
+
+  
+  flex-wrap: wrap;/*чтоб box остался своего размера и перескакивал если нужно*/
+}
+
+.five{
+    align-self: flex-start;
+    /*flex-start указывает, что данный флекс-элемент должен быть выровнен по началу поперечной оси контейнера.*/
+}
+
+.card {
+  display: flex; /* чтобы включить flexBox*/
+  flex-direction: column; /*row - строка, column - столбец*/
+  justify-content: space-between; /* выравнивание элементов по основной оси*/
+  /* 
+    flex-end - в конце 
+    flex-start - в начале
+    space-around - распределилось по ширине равномерно
+    space-between - распределилось между элементами всё пустое
+    centre - по центру
+     */
+  align-items: center; /*выравнивание всех элементов по поперечной оси*/
+  
+}
+
+.container-2{
+  padding: 32px;
+  display: flex;
+  gap: 32px;
+  flex-direction: row-reverse;/*определяет направление главной оси (main axis) и порядок расположения флекс-элементов вдоль этой оси.*/
+}
+
+.special-kid{
+  /*flex grow - можно расширить дочерний элемент*/
+  flex: 1;
+}
+
+
+/* 
+header {  фиксированный header 
+position: fixed;  фиксированное позиционирование 
+top: 0;  отступ сверху 
+left: 0;  отступ слева 
+height: 70px;  высота хедера 
+width: 100%;  ширина хедера 
+background-color: #333;  цвет фона 
+color: white;  цвет текста 
+text-align: center;  выравнивание текста по центру 
+padding: 20px 0;  внутренний отступ 
+z-index: 1000;  чтобы был поверх всех элементов 
+} 
+
+*/
+
+/* x:hover {
+color: red; цвет выделяемого элемента
+text-decoration: underline; декорация подчёркивание под линией (есть варианты)
+} */
+
+
+/* img {
+cursor: pointer; появление курсора на картинке
+display: block; блочное расположение
+margin: 1rem auto; отступы для картинки
+border-radius: 5px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); тень
+transition: transform 0.3s ease; скорость увеличения/уменьшения элемента
+}
+
+.img:nth-child(2){
+position: relative;
+left: 350px;
+}
+
+img:hover {
+transform: scale(
+  1.02
+); позволяет увеличить или уменьшить элемент (в данный момент 2%)
+}
+
+ul{
+list-style: none; это убрать точку впереди 
+} */
+
+
+/*
+<div>
+      <label for="user">User</label>
+      <input name="gender" id="male" type="radio" required />
+
+      <label for="admin">Admin</label>
+      <input name="gender" id="Female" type="radio" required />
+    </div>
+
+    <div class="btn">
+      <button type="reset">reset</button>
+      <button type="submit">register</button>
+    </div>
+  </form>
+*/
+
+
+/*
+<!-- 
+ctr + c - копировать
+ctr + v - вставить
+ctr + s - сохранить
+ctr + x - вырезать (копировать и удалить)
+ctr + a - выделить всё
+ctr + z - действие назад
+ctr + shift + z - действие вперёд
+-->
+*/
+
+
+/*
+<!-- div - блочный элемент(по умолчанию) -->
+    <!-- span - строчный элемент (по умолчанию) -->
+    <!-- br - прервать строчку -->
+    <!-- hr - линия -->
+
+*/
+
+/*
+font-size: 2rem; размер шрифта
+*/
+
+                                  /* Нижняя часть футера */
+
+ .banner img {
+    width: 100%; /* ширина изображения */
+    height: auto; /* высота изображения */
+    /*  display: 20; /* убираем пробелы под изображением */
+    object-fit: cover; /* обрезаем изображение по размеру контейнера */
+    object-position: center; /* центрируем изображение */
   }
 
-  h1 {
-    color: #2c3e5c;
-    text-align: center; /*выравнивание текста*/
-    margin-bottom: 1rem; /*отступ сверху(margin-top), отступ снизу (margin-bottom)*/
+  .banner1-caption {
+    position: absolute; /* позиционируем текст */
+    bottom: 0; /* отступ от нижнего края */
+    width: 100%; /* ширина текста */
+    background-color: #333; /* цвет фона текста */
+    color: white; /* цвет текста */
+    text-align: center; /* выравнивание текста по центру */
+    font-size: 18px; /* размер текста */
+    font-weight: bold; /* жирный текст */
+    text-transform: uppercase; /* все буквы заглавные */
+    padding: 10px 0; /* внутренний отступ текста */
+    font-family: "Oswald", sans-serif; /* шрифт текста */
+  }
+  .top,
+  .bottom {
+    display: flex; /* флекс-контейнер */
+    justify-content: center; /* выравнивание по центру */
+    gap: 0px; /* расстояние между картинками */
+    flex-wrap: wrap; /* чтобы не вылазили за пределы */
+  }
+  .featured-video-text {
+    text-align: center; /* выравнивание текста по центру */
+    font-size: 24px; /* размер текста */
+    font-weight: bold; /* жирный текст */
+    font-family: "Oswald", sans-serif; /* шрифт текста */
+    margin-top: 10px; /* отступ сверху */
+    margin-bottom: 20px; /* отступ снизу */
+    color: #000; /* цвет текста */
+    text-transform: uppercase; /* все буквы заглавные */
+  }
+  .banner2 img {
+    width: 30%; /* ширина изображения */
+    height: auto; /* высота изображения */
+    /*  display: 20; /* убираем пробелы под изображением */
+    object-fit: cover; /* обрезаем изображение по размеру контейнера */
+    object-position: center; /* центрируем изображение */
+  }
+  
+  .banner2-caption {
+    position: absolute; /* позиционируем текст */
+    bottom: 0; /* отступ от нижнего края */
+    width: 100%; /* ширина текста */
+    background-color: #333; /* цвет фона текста */
+    color: white; /* цвет текста */
+    text-align: center; /* выравнивание текста по центру */
+    font-size: 18px; /* размер текста */
+    font-weight: bold; /* жирный текст */
+    text-transform: uppercase; /* все буквы заглавные */
+    padding: 10px 0; /* внутренний отступ текста */
+    font-family: "Oswald", sans-serif; /* шрифт текста */
   }
 
-  a {
-    color: #2980b9;
-    text-decoration: none; /*текстовая декорация*/
-  }
-  a:hover {
-    text-decoration: underline; /*декорация подчёркивание под линией (есть варианты)*/
-  }
 
-  p {
-    max-width: 800px; /*ограничивает максимальную ширину*/
-    margin: 0 auto 2rem; /*внешние отступы*/
-    background-color: #fff; /*цвет фона*/
-    padding: 1rem 1.5rem; /*вн. отступы*/
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    text-align: justify; /*justify - выравнивание текста слева-справа*/
-    text-indent: 30px; /*абзацный отступ*/
-  }
-  
-  form {
-    border: 1px solid #ccc; /*рамка , solid-стиль(сплошная линия(есть варианты)), цвет*/
-    border-radius: 5px;
-    padding: 25px;
-    width: 80%;
-    margin: 0 auto;
-    line-height: 1.5;
-    max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  div {
-    margin: 15px 0;
-  }
-  
-  img {
-    cursor: pointer; /*появление курсора на картинке*/
-    display: block; /*блочное расположение*/
-    margin: 1rem auto; /*отступы для картинки*/
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*тень*/
-    transition: transform 0.3s ease; /*скорость увеличения/уменьшения элемента*/
-  }
-  
-  .img:nth-child(2){
-    position: relative;
-    left: 350px;
-  }
-  
-  img:hover {
-    transform: scale(
-      1.02
-    ); /*позволяет увеличить или уменьшить элемент (в данный момент 2%)*/
-  }
-  
-  ul{
-    list-style: none; /*это убрать точку впереди */
-  }
