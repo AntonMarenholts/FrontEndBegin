@@ -8,15 +8,15 @@
 //Выведите результат в консоль.
 
 
-let temperature = 25;
+let temperature = 0;
 
 
 let message = "";
-if (temperature < 0) {
+if (temperature <= 0) {
   message = "Холодно!";
-} else if (temperature >= 0 && temperature <= 20) {
+} else if (temperature <= 20) {
   message = "Прохладно";
-} else if (temperature >= 21 && temperature <= 30) {
+} else if (temperature <= 30) {
   message = "Тепло";
 } else {
   message = "Жарко!";
