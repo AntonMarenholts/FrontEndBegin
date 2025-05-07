@@ -4,6 +4,7 @@
 но первый и последний элементы в массиве должны быть поменяны местами.
 Исходный массив должен остаться неизмененным после вызова метода.
 */
+const animals = ["panda", "tiger", "coala", "kehguru"];
 
 function swapFirstLast(arr) {
   const newArr = [...arr];
@@ -17,6 +18,11 @@ function swapFirstLast(arr) {
   }
   return newArr;
 }
+
+console.log(swapFirstLast(animals));
+console.log(animals);
+
+console.log("----------------");
 
 /*
 Создайте метод который принимает массив строк, ничего!! не возвращает. 
@@ -32,3 +38,22 @@ function capitalizeFirstString(arr) {
   let fruits = ["apple", "orange"];
 capitalizeFirstString(fruits);
 console.log(fruits);
+
+
+
+const arr = [[1, 2, 3], ["Igor", "John", "Bob"], { isDrunk: true }];
+
+
+
+// const [[, secondNumber], [, , bob], { isDrunk }] = arr;
+
+// console.log(secondNumber, bob, isDrunk);
+
+const [, [, , bob]] = arr;
+
+console.log(bob);
+
+
+
+
+
