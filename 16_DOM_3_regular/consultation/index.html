@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+
+        <input type="text" name="nickname" placeholder="имя" required>
+        <input type="text" placeholder="местоположение" name="place">
+        <button type="submit" class="btn">Add person to list</button>
+
+
+    </form>
+    <ul id="person-list"></ul>
+    <div class="btn-container">
+        <button id="clear" class="btn left">очистить список</button>
+        <button id="clearOne" class="btn right">убрать один элемент</button>
+    </div>
+</body>
+</html>
